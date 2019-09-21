@@ -177,9 +177,14 @@ class Tooltip extends Component {
                 placement="top"
                 ref={this.popperMounted}
                 className="tooltip-popper"
+                outOfBoundaries={false}
                 modifiers={{
                   offset: {
                     offset: `0, ${pointerHeight}`
+                  },
+                  preventOverflow: {
+                    enabled: true,
+                    boundaries: 'viewport'
                   }
                 }}
                 {..._.pick(popMethodHandler, [
