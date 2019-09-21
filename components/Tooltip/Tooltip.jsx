@@ -184,7 +184,7 @@ class Tooltip extends Component {
                   },
                   preventOverflow: {
                     enabled: false,
-                    boundaries: 'viewport'
+                    boundaries: 'window'
                   }
                 }}
                 {..._.pick(popMethodHandler, [
