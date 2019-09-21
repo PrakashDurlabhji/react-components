@@ -183,7 +183,7 @@ class Tooltip extends Component {
                     offset: `0, ${pointerHeight}`
                   },
                   preventOverflow: {
-                    enabled: true,
+                    enabled: false,
                     boundaries: 'viewport'
                   }
                 }}
